@@ -1,5 +1,25 @@
-<h1>Code book for Getting and Cleaning Data Final Project</h1>
-
+Code book for Getting and Cleaning Data Final Project
 The data set that this code book pertains to is located in the tidy_data.txt file of this repository.
-
 See the README.md file of this repository for background information on this data set.
+
+Data Source and Transformation
+The zip file containing the source data is located at:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The Raw data has been processed using the following steps.
+•	The training and test sets were merged to create one data set.
+•	The measurements on the mean and standard deviation 
+•	The activity identifiers 
+•	The variable names were replaced with descriptive variable names
+•	The final data set was created with the average of each variable for each activity and each subject.
+
+Variables
+Each row contains, for a given subject and activity, 79 averaged signal measurements.
+Identifiers
+•	subject (Subject identifier)
+•	activity
+The set of variables that were estimated (and kept for this assignment) from these signals are:
+•	mean(): Mean value
+•	std(): Standard deviation
+
+The collection of the source data and the transformations listed above were implemented by the run_analysis.R R script (see README.md file for usage instructions).
